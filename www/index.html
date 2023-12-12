@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arbeitszeit</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            background-color: burlywood;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .list-item {
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .small-img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hallo Welt</h1>
+    <h1>Deine Arbeitszeiten</h1>
+
+    <input id="myDate" placeholder="Datum einfügen" type="date">
+    <input id="myStartTime" Startzeit einfügen" type="time">
+    <input id="myEndTime" placeholder="Endzeitzeit einfügen" type="time">
+    <button onclick="addWorktime()">Speichern</button>
+
+    <div id="myWorkingHours">
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
